@@ -1,3 +1,6 @@
+import 'package:f_test_demo/pages/controller/uniqueid_controller.dart';
+import 'package:f_test_demo/pages/controller_language_page.dart';
+import 'package:f_test_demo/pages/controller_uniqueid_page.dart';
 import 'package:f_test_demo/pages/model/teacher_model.dart';
 import 'package:f_test_demo/pages/next_page.dart';
 import 'package:flutter/material.dart';
@@ -74,6 +77,12 @@ class _HomePageState extends State<HomePage> {
             }),
             _LookTileInfo.forPro('getXCtroller', () {
               Get.to(const ControllerPage());
+            }),
+            _LookTileInfo.forPro('uniqueidCtroller', () {
+              Get.to(const UniqueidControllerPage());
+            }),
+            _LookTileInfo.forPro('语言国际化', () {
+              Get.to(const MessageControllerPage());
             })
           ]),
         ])

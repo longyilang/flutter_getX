@@ -1,10 +1,11 @@
 
 import 'package:f_test_demo/pages/home_page.dart';
+import 'package:f_test_demo/pages/other/asynchronous.dart';
+import 'package:f_test_demo/pages/other/isolates.dart';
+import 'package:f_test_demo/pages/other/message.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
 
-import 'asynchronous.dart';
-import 'isolates.dart';
 
 void main() {
   ///--------------->异步
@@ -23,9 +24,11 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return GetMaterialApp(
       title: 'NO',
-      home: HomePage(),
+      translations: Message(),
+      locale: const Locale('zh','CN'),
+      home: const HomePage(),
     );
   }
 }
