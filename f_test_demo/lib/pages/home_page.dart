@@ -3,6 +3,8 @@ import 'package:f_test_demo/pages/next_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'controller_page.dart';
+
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -70,7 +72,9 @@ class _HomePageState extends State<HomePage> {
             _LookTileInfo.forPro('obx状态管理', () {
               Get.to(const NextPage())?.then((value) => () {});
             }),
-            _LookTileInfo.forPro('getXCtroller', () {})
+            _LookTileInfo.forPro('getXCtroller', () {
+              Get.to(const ControllerPage());
+            })
           ]),
         ])
       ],

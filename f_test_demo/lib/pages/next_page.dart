@@ -12,7 +12,6 @@ class NextPage extends StatefulWidget {
 
 class _NextPageState extends State<NextPage> {
   var teacher = Teacher('abcd').obs;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
