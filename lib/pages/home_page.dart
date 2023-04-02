@@ -6,6 +6,7 @@ import 'package:f_test_demo/pages/next_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'controller_binding_page.dart';
 import 'controller_page.dart';
 
 class HomePage extends StatefulWidget {
@@ -83,6 +84,9 @@ class _HomePageState extends State<HomePage> {
             }),
             _LookTileInfo.forPro('语言国际化', () {
               Get.to(const MessageControllerPage());
+            }),
+            _LookTileInfo.forPro('Binding', () {
+              Get.to(const BindingControllerPage());
             })
           ]),
         ])
