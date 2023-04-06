@@ -5,6 +5,6 @@ class AllControllerBinding extends Bindings {
   @override
   void dependencies() {
     // TODO: implement dependencies
-    Get.lazyPut<BindingMyController>(() => BindingMyController());
+    Get.lazyPut<BindingMyController>(fenix: true, () => BindingMyController());
   }
 }

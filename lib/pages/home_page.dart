@@ -3,6 +3,7 @@ import 'package:f_test_demo/pages/controller_language_page.dart';
 import 'package:f_test_demo/pages/controller_uniqueid_page.dart';
 import 'package:f_test_demo/pages/model/teacher_model.dart';
 import 'package:f_test_demo/pages/next_page.dart';
+import 'package:f_test_demo/pages/service_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -84,6 +85,9 @@ class _HomePageState extends State<HomePage> {
             }),
             _LookTileInfo.forPro('语言国际化', () {
               Get.to(const MessageControllerPage());
+            }),
+            _LookTileInfo.forPro('依赖注入', () {
+              Get.to(ServicePage());
             }),
             _LookTileInfo.forPro('Binding', () {
               Get.to(const BindingControllerPage());
