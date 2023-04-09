@@ -1,0 +1,21 @@
+{
+    "reason": "success",
+    "result": {
+        "stat": "1",
+        "news": [
+            {
+                "uniquekey": "1cc782498974d3b4da922c1e2c8e6446",
+                "title": "日媒：失事海域发现“类似人形的漂浮物”！",
+                "date": "2023-04-09 20:51:00",
+                "category": "军事",
+                "author_name": "国际时事讲解",
+                "url": "https://mini.eastday.com/mobile/230409205117226181046.html",
+                "thumbnail_pic_s": "https://dfzximg02.dftoutiao.com/minimodify/20230409/640x360_6432b4c4ba379_mwpm_03201609.jpeg",
+                "is_content": "1"
+            }
+        ],
+        "page": "1",
+        "pageSize": "1"
+    },
+    "error_code": 0
+}

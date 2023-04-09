@@ -7,6 +7,7 @@ import 'package:f_test_demo/pages/service_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import '../app/routes/app_pages.dart';
 import 'controller_binding_page.dart';
 import 'controller_page.dart';
 
@@ -91,6 +92,9 @@ class _HomePageState extends State<HomePage> {
             }),
             _LookTileInfo.forPro('Binding', () {
               Get.to(const BindingControllerPage());
+            }),
+            _LookTileInfo.forPro('GetConnect', () {
+              Get.toNamed(AppPages.News);
             })
           ]),
         ])

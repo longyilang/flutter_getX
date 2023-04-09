@@ -1,3 +1,4 @@
+import 'package:f_test_demo/app/routes/app_pages.dart';
 import 'package:f_test_demo/pages/Service/service.dart';
 import 'package:f_test_demo/pages/bindinng/all_controller_binding.dart';
 import 'package:f_test_demo/pages/home_page.dart';
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
       translations: Message(),
       locale: const Locale('zh', 'CN'),
       home: const HomePage(),
+      getPages: AppPages.routes,
     );
   }
 }
