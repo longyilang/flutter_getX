@@ -50,7 +50,8 @@ dependencies:
   json_annotation: ^4.8.0
   # json解析
   json_serializable: ^6.6.1
-  
+  # toast
+  fluttertoast: ^8.0.8
 dev_dependencies:
   flutter_test:
     sdk: flutter
