@@ -1,7 +1,7 @@
 import 'package:get/get.dart';
 
-import '../modules/news/bindings/news_binding.dart';
-import '../modules/news/views/news_view.dart';
+import '../../pin/news/bindings/news_binding.dart';
+import '../../pin/news/views/news_view.dart';
 
 part 'app_routes.dart';
 
@@ -10,10 +10,10 @@ class AppPages {
 
   static const News = Routes.NEWS;
 
-  static final routes = [
+  static final List<GetPage<dynamic>> routes = [
     GetPage(
       name: _Paths.NEWS,
-      page: () => const NewsView(),
+      page: () => const NewsView({}),
       binding: NewsBinding(),
     ),
   ];

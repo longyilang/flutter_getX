@@ -24,7 +24,9 @@ class _ServicePageState extends State<ServicePage> {
             children: [
               ElevatedButton(
                   onPressed: () {
-                    Get.find<Service>().getCounter();
+                    Service storeService = Get.find<Service>();
+                    storeService.getCounter;
+                    print("storeCount---->${storeService.count}");
                   },
                   child: const Text('点我加1')),
             ],

@@ -2,7 +2,7 @@ import 'dart:io';
 
 class FutureDemo {}
 
-Future<void> _future() {
+Future<void> future() {
   return Future(() {
     sleep(const Duration(seconds: 2));
     print('执行异步');
