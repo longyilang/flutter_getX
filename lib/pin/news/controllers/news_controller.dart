@@ -1,6 +1,7 @@
-import 'package:get/get.dart';
 
-class NewsController extends GetxController {
+import '../../../app/Base/controller/base_refresh_controller.dart';
+
+class NewsController extends BaseRefreshController {
   //TODO: Implement NewsController
 
   @override
@@ -20,5 +21,25 @@ class NewsController extends GetxController {
 
   void requestNews() {
     
+  }
+  
+  @override
+  void onDetached() {
+    // TODO: implement onDetached
+  }
+  
+  @override
+  void onInactive() {
+    // TODO: implement onInactive
+  }
+  
+  @override
+  void onPaused() {
+    // TODO: implement onPaused
+  }
+  
+  @override
+  void onResumed() {
+    // TODO: implement onResumed
   }
 }
