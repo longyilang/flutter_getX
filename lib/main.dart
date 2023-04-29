@@ -28,7 +28,6 @@ void main() {
   ///---------------->依赖注入
   // initServices();
   initApi();
-  print('--->RunApp');
   runApp(const MyApp());
 }
 
@@ -43,7 +42,7 @@ class MyApp extends StatelessWidget {
       translations: Message(),
       locale: const Locale('zh', 'CN'),
       home: const HomePage(),
-      getPages: AppPages.routes,
+      getPages: AppPages.pages,
     );
   }
 }

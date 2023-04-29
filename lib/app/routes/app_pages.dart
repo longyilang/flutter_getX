@@ -10,7 +10,7 @@ class AppPages {
 
   static const News = Routes.NEWS;
 
-  static final List<GetPage<dynamic>> routes = [
+  static final List<GetPage<dynamic>> pages = [
     GetPage(
       name: _Paths.NEWS,
       page: () => const NewsView({}),

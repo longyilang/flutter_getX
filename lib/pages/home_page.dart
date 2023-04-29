@@ -93,7 +93,7 @@ class _HomePageState extends State<HomePage> {
             _LookTileInfo.forPro('Binding', () {
               Get.to(const BindingControllerPage());
             }),
-            _LookTileInfo.forPro('ai', () {
+            _LookTileInfo.forPro('News', () {
               Get.toNamed(Routes.NEWS, arguments: {'name': '参数传递'});
             })
           ]),
