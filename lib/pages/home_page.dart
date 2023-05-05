@@ -5,6 +5,7 @@ import 'package:f_test_demo/pages/controller_uniqueid_page.dart';
 import 'package:f_test_demo/pages/model/teacher_model.dart';
 import 'package:f_test_demo/pages/next_page.dart';
 import 'package:f_test_demo/pages/service_page.dart';
+import 'package:f_test_demo/pin/news/views/news_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -94,7 +95,7 @@ class _HomePageState extends State<HomePage> {
               Get.to(const BindingControllerPage());
             }),
             _LookTileInfo.forPro('News', () {
-              Get.toNamed(Routes.NEWS, arguments: {'name': '参数传递'});
+              Get.toNamed(AppRoutes.news, arguments: {'name': '参数传递'});
             })
           ]),
         ])

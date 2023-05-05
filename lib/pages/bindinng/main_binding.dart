@@ -3,10 +3,10 @@ import 'package:get/get.dart';
 
 import '../../pin/news/controllers/news_controller.dart';
 
-class AllControllerBinding extends Bindings {
+class MainBinding extends Bindings {
   @override
   void dependencies() {
     Get.lazyPut<BindingMyController>(fenix: true, () => BindingMyController());
-    Get.lazyPut<NewsController>(() => NewsController());
+    Get.lazyPut(() => NewsController());
   }
 }

@@ -91,7 +91,7 @@ abstract class BaseController<M> extends SuperController with ToastMixin {
     });
   }
 
-  ///大阳智投接口处理
+  ///接口处理
   void baseResultHandler<T>(t, bool handleSuccess,
       FutureOr<dynamic> Function(T value) onValue, bool handleError) {
     if ("1" == t.resCode) {
@@ -165,7 +165,7 @@ abstract class BaseController<M> extends SuperController with ToastMixin {
     } catch (e) {
       LogE(e.toString());
     }
-    // loadNet();
+     loadNet();
   }
 
   @override

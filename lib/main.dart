@@ -1,6 +1,6 @@
 import 'package:f_test_demo/app/routes/app_pages.dart';
 import 'package:f_test_demo/pages/Service/service.dart';
-import 'package:f_test_demo/pages/bindinng/all_controller_binding.dart';
+import 'package:f_test_demo/pages/bindinng/main_binding.dart';
 import 'package:f_test_demo/pages/home_page.dart';
 import 'package:f_test_demo/pages/other/message.dart';
 import 'package:flutter/cupertino.dart';
@@ -12,11 +12,12 @@ Future<void> initServices() async {
   await Get.putAsync(() async => Service());
 }
 
-Future<void> initApi() async {
-  await Injection().init();
+Future<void> initApi() async{
+  print('初始化一---->');
+   await Injection().init();
 }
 
-void main() {
+void main() async{
   ///--------------->异步
   //print('开始执行---->');
   // future();
@@ -27,7 +28,8 @@ void main() {
   // runIsolateDemo();
   ///---------------->依赖注入
   // initServices();
-  initApi();
+  WidgetsFlutterBinding.ensureInitialized();
+  await initApi();
   runApp(const MyApp());
 }
 
@@ -38,11 +40,11 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'NO',
-      initialBinding: AllControllerBinding(),
+      initialBinding: MainBinding(),
       translations: Message(),
       locale: const Locale('zh', 'CN'),
       home: const HomePage(),
-      getPages: AppPages.pages,
+      getPages: AppRoutes.pages,
     );
   }
 }
